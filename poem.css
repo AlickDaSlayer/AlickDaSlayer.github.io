@@ -5,9 +5,15 @@ body {
 }
 p { 
   text-align: center;
+  font-family: Helvetica, sans-serif;
 }
 h1 {
   margin-left: 75px;
+  font-family: Helvetica, sans-serif;
+}
+h2 {
+  margin-left: 75px;
+  font-family: Helvetica, sans-serif;
 }
 
   
