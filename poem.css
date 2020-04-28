@@ -4,8 +4,9 @@ body {
   color: rgb( 255, 255, 255);
 }
 p { 
-  text-align: center;
+  margin-left: 160px;
   font-family: Helvetica, sans-serif;
+  line-height: 1.1;
 }
 h1 {
   margin-left: 75px;
