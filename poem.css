@@ -14,6 +14,7 @@ h1 {
 }
 h2 {
   margin-left: 75px;
+  margin-bottom: 4px;
   font-family: Helvetica, cursive;
 }
 
@@ -21,5 +22,9 @@ h2 {
   margin-bottom: 0px;
   margin-top: 0px;
 }
+h3 {
+  margin-top: 4px;
+}
+
 
   
