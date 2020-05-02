@@ -9,6 +9,18 @@ p {
   padding: 10px;
   line-height: 1.1;
 }
+.bio1 {
+  text-align: left;
+  font-family: Helvetica, sans-serif;
+  padding: 10px;
+  line-height: 1.1;
+}
+.bio2 {
+  text-align: left;
+  font-family: Helvetica, sans-serif;
+  padding: 10px;
+  line-height: 1.1;
+}
 h1 {
   margin-left: 75px;
   font-family: Helvetica, sans-serif;
