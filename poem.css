@@ -42,12 +42,18 @@ h3 {
   width: 45%;
   float: left;
   padding: 10px;
+  border: 5px dotted white;
 }
 #divRight {
   width: 25%;
-  padding: 10px;
+  padding: 5px;
   float: right;
-  margin-right: 160px;
+  margin-right: 250px;
+  border: 5px dotted white;
+}
+.portrait {
+  border: 5px dotted white;
+  padding: 5px;
 }
 
 
