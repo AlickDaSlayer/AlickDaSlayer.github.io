@@ -25,6 +25,16 @@ h2 {
 h3 {
   margin-top: 4px;
 }
+#divLeft {
+  width: 45%;
+  float: left;
+  padding: 10px;
+}
+#divRight {
+  width: 45%;
+  padding: 10px;
+  float: right;
+}
 
 
   
