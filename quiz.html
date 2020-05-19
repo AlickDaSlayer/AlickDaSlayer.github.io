@@ -27,11 +27,11 @@
 	
 	<p>
    		<h2>3. Which one/or multiple of these are considered bosses?</h2><br>
-  		<label><input value="Wither Skeleton" type="checkbox">Wither Skeleton</label><br>
+  		<label><input value="Wither Skeleton" type="checkbox" id="wrong1">Wither Skeleton</label><br>
   		<label><input value="Wither" type="checkbox" id="answer3">Wither</label><br>
   		<label><input value="Ender Dragon" type="checkbox" id="answer4">Ender Dragon</label><br>
 		<label><input value="Elder Guardian" type="checkbox" id="answer5">Elder Guardian</label><br>
-		<label><input value="Iron Golem" type="checkbox">Iron Golem</label><br>
+		<label><input value="Iron Golem" type="checkbox" id="wrong2">Iron Golem</label><br>
 	</p>
 	<p>
    		<h2>4. Which is the rarest ore?</h2><br>
@@ -45,7 +45,7 @@
 		Answers
 	</button>
   
-	<h1> Your Score was: <span id="score">...</span> out of 4</h1>
+	<h1> Your Score was: <span id="score">...</span> out of 4, Looks like you <span id="result">...</span></h1>
   
 <script>
 	function clickAction() {
@@ -60,7 +60,7 @@
 		} else if (eggSelect.value != 16) {
 			score.textContent = Number(score.textContent) + 0;
 		}
-		if (answer3.checked && answer4.checked && answer5.checked){
+		if (answer3.checked && answer4.checked && answer5.checked && wrong1.checked==false && wrong2.checked==false){
 			score.textContent = Number(score.textContent) + 1;	
 		} else {
 			score.textContent = Number(score.textContent) + 0;
@@ -69,6 +69,11 @@
 			score.textContent = Number(score.textContent) + 1;
 		} else {
 			score.textContent = Number(score.textContent) + 0;
+		}
+		if (Number(score.textContent) >= 3) {
+			result.textContent = 'passed!';
+		} else if (Number(score.textContent) < 3) {
+			result.textContent = 'failed!';
 		}
 	}
 	function changeAction() {
